@@ -1,27 +1,21 @@
-.header {
-height: 30px;
-border-bottom: 1px solid silver;
-display: grid;
-grid-template-rows: auto;
-
+body {
+  background-color:#FBFBFB;
+  padding: 0;
+  margin: 0;
+  
 }
 
-#title {
+h4 {
     font-family: 'Roboto', sans-serif;
+    color: #4595EA;
     font-size: 12px;
     text-align: center;
 
 }
 
-.body{
-  background-color:whitesmoke;
-  padding: 0;
-  margin: 0;
-}
-
 .button {
-  background-color: rgb(43, 235, 100);
-    font-family: 'Roboto', sans-serif; color: aliceblue;
+  background-color: rgb(55, 247, 112);
+font-family: 'Roboto', sans-serif; color: aliceblue;
   width: 90px;
   height: 30px;
   border-radius: 10px;
@@ -30,29 +24,71 @@ grid-template-rows: auto;
 }
 
 .search-bar {
+  box-sizing: border-box;
   width: 200px;
   height: 25px;
-  border-radius: 10px
-  border: 5px;
+  border-radius: 3px;
+  border: 1px solid #E0E0E0;
 
 }
 
 .container {
   display: grid;
-  height:10px;
-  grid-template-columns: auto auto auto auto auto;
-  justify-content: space-around;
+  gap: 30px;
+  grid-template-columns: 200px 200px 200px 200px;
+  justify-content:space-evenly;
   margin: 15px;
   
 }
 
-.module {
-  flex: grid;
-  text-align: center;
-  border: none;
-  background-color: mintcream;
-  padding: 40px;
-  height: 30px;
-  box-shadow: 0px 1px 1px;
+.component {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 200px 200px 200px 200px;
+  font-family:'Open Sans', sans-serif;
+  border:1px solid #ECECEC;
+  background: #FFFFFF;
+  padding: 50px;
+  height: 50px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 
 }
+
+.card {
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+background: #0273EB;
+color: #FFFFFF;
+font-family:'Roboto', sans-serif;
+position: relative;
+left: 10px;
+right: 10px;
+width: 60px;
+height: 50px;
+border-radius: 3px;
+
+}
+
+.headine {
+font-family:'Roboto', sans-serif;
+text-align: center;
+flex-direction: column;
+
+}
+
+
+/*.users-ball1 {
+display: flex;
+flex-direction: column;
+gap: 10px;
+position: absolute;
+justify-content: space-between;
+font-family: 'Roboto';
+font-size: small;
+background: #C501E2;
+width: 30px;
+height: 30px;
+
+}*/
