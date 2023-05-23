@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <link rel="stylesheet" href="css\styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"></head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SGP grupos</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<title>SGP grupos</title>
 
 <body>
-
   <h4>GRUPOS DE USUARIOS PARA EQUIPOS DEL PROYECTO</h4>
-  <button class="button" href="#">Crear grupo</button>
-  <input class="search-bar" type="search" placeholder="buscar grupo...">
 
+<div>
+  <button class="button">Crear grupo</button>
+  <input class="search-bar" type="search" placeholder="buscar grupo...">
+</div>
+<!--Grupos de SGP-->
   <section>
-  <div class="container">
-         <div class="component">
-          <span class="card"> G </span>
-          <span class="headline">Gerente</span>
-        <div>
-          <span class="users-ball">JV</span>
-          <span class="users-ball">DG</span>
-          <span class="users-ball">DR</span>
+    <div class="container">
+      <div class="component">
+        <span class="card"> G </span>
+        <span class="headline">Gerente</span>
+        <div class="container-balls">
+          <span class="user-ball">JV</span>
+          <span class="user-ball">DG</span>
+          <span class="user-ball">DC</span>
+          <span class="user-ball">DR</span>
         </div>
-        </div>
-<!--
+        <button class="botton-remove">Quitar</button>
+      </div>
+      
         <div class="component">
           <span class="card"> C </span>
           <span class="headline">Coordinadores</span>
-        <div>
-          <span class="users-ball">IM</span>
-          <span class="users-ball">CV</span>
-          <span class="users-ball">JP</span>
+        <div class="container-balls">
+          <span class="user-ball">IM</span>
+          <span class="user-ball">CV</span>
+          <span class="user-ball">JP</span>
         </div>
+        <button class="botton-remove">Quitar</button>
         </div>
 
         <div class="component">
           <span class="card"> D.P </span>
           <span class="headline">Directores de proyecto</span>
-        <div>
-          <span class="users-ball">SZ</span>
-          <span class="users-ball">FR</span>
-          <span class="users-ball">WD</span>
+        <div class="container-balls">
+          <span class="user-ball">SZ</span>
+          <span class="user-ball">FR</span>
+          <span class="user-ball">WD</span>
         </div>
+        <button class="botton-remove">Quitar</button>
         </div>
 
         <div class="component">
         <span class="card"> C.C </span>
         <span class="headline">Comite de cambios</span>
-        <div>
-          <span class="users-ball">TS</span>
-          <span class="users-ball">JC</span>
-          <span class="users-ball">VP</span>
+        <div class="container-balls">
+          <span class="user-ball">TS</span>
+          <span class="user-ball">JC</span>
+          <span class="user-ball">VP</span>
+          <span class="user-ball">HA</span> 
+          <span class="user-ball">DR</span>
         </div>
+        <button class="botton-remove">Quitar</button>
         </div>
--->
-    </div> 
+    </div>
   </section>
 
 </body>
+
 </html>
