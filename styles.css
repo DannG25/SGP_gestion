@@ -1,25 +1,27 @@
 body {
-  background-color:#FBFBFB;
+  background-color: #FBFBFB;
   padding: 0;
   margin: 0;
-  
+
 }
 
 h4 {
-    font-family: 'Roboto', sans-serif;
-    color: #4595EA;
-    font-size: 15px;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #4595EA;
+  font-size: 15px;
+  text-align: center;
 
 }
 
 .button {
   background-color: rgb(55, 247, 112);
-font-family: 'Roboto', sans-serif; color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  color: aliceblue;
   width: 90px;
   height: 30px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 
 }
 
@@ -35,52 +37,92 @@ font-family: 'Roboto', sans-serif; color: aliceblue;
 .container {
   display: grid;
   gap: 20px;
-  grid-template-columns: 200px 200px 200px 200px;
-  justify-content:space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
   padding: 20px;
-  
+
 }
 
 .component {
-  gap: 30px;
-  grid-template-columns: 200px 200px 200px 200px;
-  border:1px solid #ECECEC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ECECEC;
   background: #FFFFFF;
-  padding: 50px;
-  height: 50px;
-  width: 66px;
+  padding: 1rem;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-
+  gap: 1rem;
 }
 
 .card {
-display: flex;
-flex-direction: column; 
-text-align: center;
-background: #0273EB;
-color: #FFFFFF;
-font-family:'Roboto', sans-serif;
-padding:  10px;
-width: 40px;
-border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  text-align: center;
+  position: static;
+  background: #0273EB;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  padding: 1.25rem 1.5rem;
+  border-radius: 3px;
 
 }
 
 .headline {
-font-family:'Roboto', sans-serif;
-justify-content: center;
-font-size: 15px;
-text-align: center;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  font-size: 15px;
+  text-align: center;
 
 }
 
-/*.users-ball {
-border: 1px solid white;
-justify-content: center;
-font-size: small;
-font-family: 'Roboto', sans-serif;
-background: #C501E2;
-padding: 6px;
-border-radius: 100px;
+.container-balls {
+  display: flex;
+  gap: 4px;
 
-} */
+}
+/* Colores de bolas de usuario */
+
+.user-ball:nth-child(1) {
+  background-color: #C501E2;
+}
+
+.user-ball:nth-child(2) {
+  background-color: #F82D97;
+}
+
+.user-ball:nth-child(3) {
+  background-color: #01C4E7;
+}
+
+.user-ball:nth-child(4) {
+  background-color: #2EF8A0;
+
+}
+.user-ball:nth-child(5) {
+  background-color: #FF0534;
+
+}
+
+.user-ball {
+  display: inline;
+  border: 1px solid white;
+  color: #FFFFFF;
+  justify-content: center;
+  font-size: small;
+  font-family: 'Roboto', sans-serif;
+  padding: 12px;
+  border-radius: 100px;
+
+}
+
+.botton-remove {
+  all: unset;
+  margin-top: 1rem;
+  margin-left: auto;
+  color: red;
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+
+}
