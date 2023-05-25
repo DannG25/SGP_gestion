@@ -10,27 +10,27 @@ h4 {
   color: #4595EA;
   font-size: 15px;
   text-align: center;
-
 }
 
 .button {
-  background-color: rgb(55, 247, 112);
+  background-color: #2EF8A0;
   font-family: 'Roboto', sans-serif;
   color: aliceblue;
   width: 90px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
 
 }
 
 .search-bar {
+  position: absolute;
   box-sizing: border-box;
-  width: 200px;
-  height: 25px;
+  width: 325px;
+  height: 35px;
   border-radius: 3px;
-  border: 1px solid #E0E0E0;
+  border:1px solid #E0E0E0;
 
 }
 
@@ -52,6 +52,7 @@ h4 {
   padding: 1rem;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   gap: 1rem;
+
 }
 
 .card {
@@ -60,13 +61,14 @@ h4 {
   box-sizing: content-box;
   text-align: center;
   position: static;
-  background: #0273EB;
+  background-color: #01C4E7;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   padding: 1.25rem 1.5rem;
   border-radius: 3px;
-
 }
+
+
 
 .headline {
   font-family: 'Roboto', sans-serif;
@@ -81,7 +83,7 @@ h4 {
   gap: 4px;
 
 }
-/* Colores de bolas de usuario */
+/* Colores propiedad user-ball */
 
 .user-ball:nth-child(1) {
   background-color: #C501E2;
