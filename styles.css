@@ -33,6 +33,7 @@ h4 {
   border: none;
   cursor: pointer;
   margin-left: auto;
+  
 }
 
 .search-bar {
@@ -50,6 +51,7 @@ h4 {
  top: 20px;
  margin-left: -35px;
  margin-right: 20px;
+ color: rgba(222, 222, 222, 1);
 }
 
 .container {
@@ -57,6 +59,7 @@ h4 {
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
+
 }
 
 .component {
@@ -83,9 +86,8 @@ h4 {
   font-style: normal;
   padding: 1.25rem 1.5rem;
   border-radius: 3px;
+  
 }
-
-
 
 .headline {
   font-family: 'Roboto', sans-serif;
