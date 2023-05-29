@@ -2,35 +2,47 @@ body {
   background-color: #FBFBFB;
   padding: 0;
   margin: 0;
+}
 
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
 
 h4 {
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   color: #4595EA;
   font-size: 15px;
-  text-align: center;
+  text-align: start;
+  font-weight: bold;
+  margin: 6px;
+
 }
 
 .button {
   background-color: #2EF8A0;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   color: aliceblue;
   width: 90px;
   height: 30px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-
+  margin-left: auto;
 }
 
 .search-bar {
-  position: absolute;
   box-sizing: border-box;
   width: 325px;
   height: 35px;
   border-radius: 3px;
   border:1px solid #E0E0E0;
+  justify-items: end;
+  margin: 6px;
 
 }
 
@@ -64,6 +76,7 @@ h4 {
   background-color: #01C4E7;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   padding: 1.25rem 1.5rem;
   border-radius: 3px;
 }
@@ -73,8 +86,10 @@ h4 {
 .headline {
   font-family: 'Roboto', sans-serif;
   justify-content: center;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: bold;
   text-align: center;
+  color: #929292;
 
 }
 
@@ -115,6 +130,7 @@ h4 {
   font-family: 'Roboto', sans-serif;
   padding: 12px;
   border-radius: 100px;
+  font-weight: bold;
 
 }
 
@@ -128,3 +144,5 @@ h4 {
   cursor: pointer;
 
 }
+
+
