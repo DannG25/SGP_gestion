@@ -14,7 +14,7 @@ body {
 h4 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  color: #4595EA;
+  color: rgba(69, 149, 234, 1);
   font-size: 15px;
   text-align: start;
   font-weight: bold;
@@ -26,7 +26,7 @@ h4 {
   background-color: #2EF8A0;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  color: aliceblue;
+  color: rgba(255, 255, 255, 1);
   width: 90px;
   height: 30px;
   border-radius: 5px;
@@ -40,10 +40,16 @@ h4 {
   width: 325px;
   height: 35px;
   border-radius: 3px;
-  border:1px solid #E0E0E0;
-  justify-items: end;
+  border:1px solid rgba(224, 224, 224, 1);
   margin: 6px;
 
+}
+
+.material-symbols-outlined {
+ font-size: 17px;
+ top: 20px;
+ margin-left: -35px;
+ margin-right: 20px;
 }
 
 .container {
@@ -51,8 +57,6 @@ h4 {
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
-  padding: 20px;
-
 }
 
 .component {
@@ -144,5 +148,4 @@ h4 {
   cursor: pointer;
 
 }
-
 
