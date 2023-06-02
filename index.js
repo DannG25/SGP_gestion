@@ -91,6 +91,6 @@ console.log(typeof jsonData);
 
 console.log(contenedor5);
 
-document.getElementsByClassName("Iniciales").innerHTML ="G";
-document.getElementsByClassName("nombre").innerHTML ="Gerente";
-document.getElementsByClassName("integrantes").innerHTML =["JV","DG","DC","DR"];
+// document.getElementsByClassName("Iniciales").innerHTML ="G";
+// document.getElementsByClassName("nombre").innerHTML ="Gerente";
+// document.getElementsByClassName("integrantes").innerHTML =["JV","DG","DC","DR"];
