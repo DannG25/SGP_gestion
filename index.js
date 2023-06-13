@@ -1,29 +1,16 @@
-async function postJSON(data) {
-try {
-   const response = await fetch('json\data.json', {
+function GetGroupProject() {
+   try {
+      fetch('json/data.json', {
+         method: "GET",
+         headers: {
+            "Accept": 'application/json',
+         },
 
-   method: "POST",
-   Headers: {
-      "Content-Type": 'application/json',
-   },
-   body: JSON.stringify(data),
-   });     
-
-      const result = await response.json();
-      console.log ("Success:", result);
-} catch (error) {
+      })
+         .then(response => response.json())
+         .then(response => console.log(JSON.stringify(response)))
+   } catch (error) {
       console.error("Error:", error);
    }
 }
-
-      const data = { username: "datos" };
-      postJSON(data);
-   
-
-   // const data = JSON.fetch('json\data.json');
-   // console.log (data);
-
-   // let read = [inciales, nombre, integrantes]
-   // for (let read = 0; i < data.length; i++){
-   //    console.log( data[i]);
-   // }
+GetGroupProject();
