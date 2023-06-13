@@ -1,96 +1,29 @@
-// Modulo Gerente
-const contenedor1 = `[
-  {
-    "inciales":"G",
-    "nombre":"Gerente",
-    "integrantes":[
-       "JV",
-       "DG",
-       "DC",
-       "DR"
-    ]
-  }
-]`
-const jsonData =JSON.parse(contenedor1);
-console.log(typeof jsonData);
+async function postJSON(data) {
+try {
+   const response = await fetch('json\data.json', {
 
-console.log(contenedor1);
+   method: "POST",
+   Headers: {
+      "Content-Type": 'application/json',
+   },
+   body: JSON.stringify(data),
+   });     
 
+      const result = await response.json();
+      console.log ("Success:", result);
+} catch (error) {
+      console.error("Error:", error);
+   }
+}
 
-// Modulo Coordnadores
-const contenedor2 = `[
-  {
-    "inciales":"C",
-    "nombre":"Coordinadores",
-    "integrantes":[
-       "JV",
-       "DG",
-       "DC",
-       "DR"
-    ]
- },
-]`
-const jsonData_2 =JSON.parse(contenedor2);
-console.log(typeof jsonData);
+      const data = { username: "datos" };
+      postJSON(data);
+   
 
-console.log(contenedor2);
+   // const data = JSON.fetch('json\data.json');
+   // console.log (data);
 
-
-// Modulo Directores de proyecto
-const contenedor3 = `[
-  {
-    "inciales":"DP",
-    "nombre":"Directores de proyecto",
-    "integrantes":[
-       "JV",
-       "DG",
-       "DC"
-    ]
- },
-]`
-const jsonData_3 =JSON.parse(contenedor4);
-console.log(typeof jsonData);
-
-console.log(contenedor3);
-
-
-// Modulo Comite de cambios 
-const contenedor4 = `[
-  {
-    "inciales":"CC",
-    "nombre":"Comite de cambios",
-    "integrantes":[
-       "JV",
-       "DG",
-       "DC",
-       "DR",
-       "SS",
-       "RN"
-    ]
- },
-]`
-var jsonData_4 =JSON.parse(contenedor4);
-console.log(typeof jsonData);
-
-console.log(contenedor4);
-
-
-// Modulo Aprovadores
-const contenedor5 = `[
-  {
-    "inciales":"A",
-    "nombre":"Aprobadores",
-    "integrantes":[
-       "JV",
-       "DG"
-    ]
- }
-]`
-const jsonData_5 =JSON.parse(contenedor5);
-console.log(typeof jsonData);
-
-console.log(contenedor5);
-
-// document.getElementsByClassName("Iniciales").innerHTML ="G";
-// document.getElementsByClassName("nombre").innerHTML ="Gerente";
-// document.getElementsByClassName("integrantes").innerHTML =["JV","DG","DC","DR"];
+   // let read = [inciales, nombre, integrantes]
+   // for (let read = 0; i < data.length; i++){
+   //    console.log( data[i]);
+   // }
